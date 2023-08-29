@@ -1,0 +1,21 @@
+{
+  "name": "signoz/sample-php-app",
+  "description": "A PHP application to demonstrate OpenTelemetry based instrumentation.",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Hello SigNoz",
+      "email": "hello@signoz.io"
+    }
+  ],
+  "minimum-stability": "beta",
+  "require": {
+    "php": ">=7.4",
+    "open-telemetry/opentelemetry": "^1",
+    "guzzlehttp/guzzle": "*",
+    "guzzlehttp/psr7": "^2.2",
+    "php-http/guzzle7-adapter": "*",
+    "monolog/monolog": "^3.3"
+  }
+}
