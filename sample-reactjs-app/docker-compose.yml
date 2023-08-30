@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  front:
+    image: node:18-bullseye-slim
+    working_dir: /opt/app
+    command: yarn start
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/opt/app:default
+    restart: on-failure

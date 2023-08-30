@@ -1,15 +1,15 @@
 # SigNoz PHP Monitoring Playground
 
 ### Step 1 (Stack Installation)
-### Installation
+#### Installation
 ```sh
 docker compose -f deploy/docker/clickhouse-setup/docker-compose.yaml up -d
 ```
 Open http://localhost:3301 in your favourite browser. To check if works the SigNoz UI.
 
 > Note: You have to create a SigNoz account to access into the UI. You'll find the instructions during the process.
-### Step 2 (Sample App Installation)
-### Generating traces
+### Step 2 (Sample PHP App)
+#### Generating traces
 To generate distributed traces, run:
 
 ```bash
@@ -23,3 +23,19 @@ docker compose up
 $ curl localhost:8000/users/otel
 ```
 Open http://localhost:3301 in your favourite browser. And check if you can see the traces generated from the sample app.
+
+### Step 3 (Sample ReactJS App)
+
+#### Generating traces
+To generate distributed traces, run:
+
+```bash
+# navigate to the sample-reactjs-app
+cd sample-reactjs-app
+
+docker compose run front yarn install
+docker compose up
+```
+Open http://localhost:3000 and generate traces to SigNoz
+
+#### Hit the app a couple of times before actually seeing the tracing/logs on the SigNoz dashboard
