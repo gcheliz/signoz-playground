@@ -39,3 +39,16 @@ docker compose up
 Open http://localhost:3000 and generate traces to SigNoz
 
 #### Hit the app a couple of times before actually seeing the tracing/logs on the SigNoz dashboard
+
+### Step 4 (Sample Golang App)
+#### Generating traces
+To generate distributed traces, run:
+
+```bash
+# navigate to the sample-golang-app
+cd sample-golang-app
+
+docker compose run --rm golang go mod tidy
+docker compose up
+```
+Open http://localhost:8090/books and generate traces to SigNoz
