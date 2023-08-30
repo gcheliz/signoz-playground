@@ -16,7 +16,7 @@ To generate distributed traces, run:
 # navigate to the distributed-tracing
 cd sample-php-app/distributed-tracing
 
-docker compose run service-one composer install
+docker compose run --rm service-one composer install
 docker compose up
 
 # in a separate terminal
@@ -33,7 +33,7 @@ To generate distributed traces, run:
 # navigate to the sample-reactjs-app
 cd sample-reactjs-app
 
-docker compose run front yarn install
+docker compose run --rm front yarn install
 docker compose up
 ```
 Open http://localhost:3000 and generate traces to SigNoz
