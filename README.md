@@ -1,4 +1,4 @@
-# SigNoz PHP Monitoring Playground
+# SigNoz Monitoring Playground
 
 ### Step 1 (Stack Installation)
 #### Installation
